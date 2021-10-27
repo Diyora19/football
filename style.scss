@@ -1,0 +1,146 @@
+%rasm{
+    &:hover{
+        transform: scale(1.05);
+        border: 1px solid gray;
+        
+        
+    }
+
+    
+}
+
+$color: white;
+
+body{
+    background: url("../images/1.jpg") no-repeat fixed center;
+    // background-position: center; // center ni ushlab qolish uchun 
+    background-size: cover;
+  
+    img{
+        width: 100%;
+        height: 100%;
+        margin: 0 auto;
+        padding: 0 10px;
+    }
+
+.container-fluid{
+    position: sticky;
+    top: 10px;
+    z-index: 100;
+    .row{
+
+        .col{
+
+            nav{
+                
+                
+            }
+        }
+    }
+}
+
+h1, h2{
+    color: $color;
+    text-align: center;
+    
+}
+hr{
+    width: 120px;
+    height: 0.25px;
+    border: none;
+    border: 3px solid black;
+    margin: 10px auto;
+    
+}
+
+.birinchi{
+    .rasm{
+        
+        overflow: hidden;
+        img{
+            padding: 15px;
+            overflow: hidden;
+            resize: none;   
+            transition: all 0.3s linear;
+            @extend %rasm;
+            
+        }
+    }
+    
+    p{
+       color: $color; 
+       padding: 20px;
+    }
+    h3{
+        color: $color;
+        padding: 15px;
+        
+    }
+}
+
+.container{
+        img{
+            padding-top: 15px;
+            transition: all 0.2s ease-in;
+            @extend %rasm;
+        }
+}
+    
+
+.text{
+
+    background-color: rgb(19, 16, 16);
+    margin: 15px 15px;
+    p{
+        color: $color;
+        padding: 55px 100px;
+        text-align: center;
+              
+    }
+}
+
+.container{
+    .row{
+        .col-md-9{
+            .form{
+                
+                input{
+                    background-color: rgba(5, 5, 5, 0.5);
+                    border: none;
+                    outline-color: none;
+                    transition: all 0.2s ease-in;
+
+                    &:hover{
+                        transform: scale(1.025);
+                    }
+
+                    &:active{
+                        border: none;
+                        outline: none;
+                    }
+                }
+
+                button{
+                    display: block;
+                    margin: 0 auto 25px;
+                    width: 200px;
+                    background-color: rgba(5, 5, 5, 0.5);
+                    transition: all 0.2s ease-in;
+
+                    &:hover{
+                        transform: scale(1.025);
+                    }
+
+                    &:active{
+                        background-color: rgba(63, 61, 61, 0.5);
+                    }
+
+                }
+
+
+            }
+        }
+    }
+}
+
+}
